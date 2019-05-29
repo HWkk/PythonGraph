@@ -24,9 +24,9 @@ font = {'family': 'Times New Roman',
 
 plt.xticks(fontsize=8, weight='medium')
 plt.yticks(fontsize=8, weight='medium')
-plt.xlabel('Dimension', size=8, weight='medium')
+plt.xlabel('Parallelism', size=8, weight='medium')
 plt.ylabel('Latency(us)', size=8, weight='medium')
-# plt.ylim(0, 1.15)
+plt.ylim(0, 1.05)
 
 marksize = 3
 linewidth = 1.2
@@ -39,5 +39,5 @@ plt.plot(data[data.columns[0]], data[data.columns[5]], marker='*', markersize=ma
 plt.plot(data[data.columns[0]], data[data.columns[6]], marker='p', markersize=marksize, linewidth=linewidth)
 
 plt.legend(loc="best", prop=font, frameon=False, labelspacing=0.2, ncol=3, borderaxespad=0.3, columnspacing=1.2, handletextpad=0.5)
-# plt.show()
-plt.savefig(dir + fileName + ".pdf")
+plt.show()
+# plt.savefig(dir + fileName + ".pdf")
