@@ -24,9 +24,9 @@ font = {'family': 'Times New Roman',
 
 plt.xticks(fontsize=8, weight='medium')
 plt.yticks(fontsize=8, weight='medium')
-plt.xlabel('MicroCluster Size', size=8, weight='medium')
+plt.xlabel('Parallelism', size=8, weight='medium')
 plt.ylabel('Latency(us)', size=10, weight='medium')
-# plt.ylim(0, 10)
+plt.ylim(0, 10)
 # plt.xlim(15, 160)
 
 marksize = 3
