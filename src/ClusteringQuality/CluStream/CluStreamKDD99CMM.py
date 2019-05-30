@@ -4,6 +4,7 @@ import matplotlib as mpl
 import os, sys
 
 mpl.rcParams['axes.linewidth'] = 1.2 #set the value globally
+plt.rc('font', family='Helvetica', size=10, weight='roman')
 
 dir = '../../Data/ClusteringQuality/CluStream/'
 fileName = 'CluStream-KDD99-Normalized'
@@ -11,7 +12,7 @@ data = pd.read_excel(dir + fileName + '.xlsx')
 
 plt.figure(figsize=(4.0, 2.5))
 plt.subplots_adjust(
-    left=0.13,
+    left=0.12,
     bottom=0.18,
     right=0.96,
     top=0.94,
@@ -38,9 +39,9 @@ marksize = 2
 linewidth = 1
 
 plt.plot(data[data.columns[0]], data[data.columns[1]], linestyle=":", linewidth=linewidth, color='black')
-plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth)
 plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='r')
-plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc=8, frameon=False, bbox_to_anchor=(0.5, 0))
+plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth)
+plt.legend(labels=[data.columns[1], data.columns[3], data.columns[2]], loc=8, frameon=False, bbox_to_anchor=(0.5, 0))
 #plt.show()
 plt.savefig(dir + fileName + ".pdf")
 

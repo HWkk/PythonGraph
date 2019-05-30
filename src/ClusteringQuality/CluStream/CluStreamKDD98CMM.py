@@ -4,6 +4,7 @@ import matplotlib as mpl
 import os, sys
 
 mpl.rcParams['axes.linewidth'] = 1.2 #set the value globally
+plt.rc('font', family='Helvetica', size=10, weight='roman')
 
 dir = '../../Data/ClusteringQuality/CluStream/'
 fileName = 'CluStream-KDD98-Normalized'
@@ -38,9 +39,9 @@ marksize = 2
 linewidth = 1
 
 plt.plot(data[data.columns[0]], data[data.columns[1]], linestyle=":", linewidth=linewidth, color='black')
-plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth)
 plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='r')
-plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc=8, frameon=False)
+plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth)
+plt.legend(labels=[data.columns[1], data.columns[3], data.columns[2]], loc=8, frameon=False, bbox_to_anchor=(0.4, 0))
 #plt.show()
 plt.savefig(dir + fileName + ".pdf")
 
