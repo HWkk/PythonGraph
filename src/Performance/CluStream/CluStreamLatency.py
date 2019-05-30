@@ -21,7 +21,7 @@ plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
 
 fig, ax = plt.subplots(figsize=(3.6, 2.2))
-
+plt.rc('pdf', fonttype=42)
 plt.subplots_adjust(
     left=0.15,
     bottom=0.1,

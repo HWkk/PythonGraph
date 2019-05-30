@@ -5,7 +5,7 @@ mpl.rcParams['axes.linewidth'] = 1.2 #set the value globally
 plt.rc('font', family='Helvetica', size=11, weight='roman')
 
 dir = '../../Data/Performance/DenStream/'
-
+plt.rc('pdf', fonttype=42)
 
 datasets = ['large-KDD99', 'large-CoverType', 'large-KDD98']
 

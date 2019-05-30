@@ -10,6 +10,8 @@ dir = '../../Data/ClusteringQuality/CluStream/'
 fileName = 'CluStream-KDD99-Normalized'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
+plt.rc('pdf', fonttype=42)
+
 plt.figure(figsize=(4.0, 2.5))
 plt.subplots_adjust(
     left=0.12,
