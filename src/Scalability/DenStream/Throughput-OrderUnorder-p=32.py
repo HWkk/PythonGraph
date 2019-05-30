@@ -6,7 +6,7 @@ font = {'family': 'Times New Roman',
         'size': 10,
         }
 
-datasets = ['KDD99', 'CoverType', 'KDD98']
+datasets = ['large-KDD99', 'large-CoverType', 'large-KDD98']
 
 ordered_DenStream = [20.10, 18.42, 3.11]
 unordered_Denstream = [9.51, 14.62, 2.81]
@@ -16,16 +16,16 @@ width = 0.2
 
 plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
-fig, ax = plt.subplots(figsize=(4.3, 2.5))
+fig, ax = plt.subplots(figsize=(4.5, 2.5))
 plt.subplots_adjust(
     left=0.13,
     bottom=0.13,
-    right=0.95,
+    right=0.97,
     top=0.95,
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, ordered_DenStream, width, color='lightpink', label="ordered-DenStream", edgecolor='black')
+rects1 = plt.bar(pos, ordered_DenStream, width, color='lightpink', label="DistStream-DenStream", hatch='///', edgecolor='black')
 
 rects2 = plt.bar([p + width for p in pos], unordered_Denstream, width, color='lightgreen', label="unordered-DenStream", hatch='xxx', edgecolor='black')
 
@@ -43,5 +43,5 @@ def autolabel(rects, loc, angle):
 autolabel(rects1, 0, 0)
 autolabel(rects2, 0, 0)
 plt.legend(loc="upper left", prop=font, frameon=False, labelspacing=0.2, ncol=3, borderaxespad=0.3, columnspacing=1.2, handletextpad=0.5)
-plt.show()
-# plt.savefig(dir + "DenStream-p=32-Throughput.pdf")
+# plt.show()
+plt.savefig(dir + "DenStream-p=32-Throughput.pdf")

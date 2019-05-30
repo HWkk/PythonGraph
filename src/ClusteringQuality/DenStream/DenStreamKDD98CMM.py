@@ -5,9 +5,9 @@ dir = '../../Data/ClusteringQuality/DenStream/'
 fileName = 'DenStream-KDD98-Normalized'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
-plt.figure(figsize=(4.5, 2.7))
+plt.figure(figsize=(3.8, 2.7))
 plt.subplots_adjust(
-    left=0.1,
+    left=0.12,
     bottom=0.13,
     right=0.96,
     top=0.94,

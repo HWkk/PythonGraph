@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dir = '../../Data/Scalability/DStream/'
+dir = '../../Data/Scalability/DenStream/'
 fileName = 'DenStream-MaxSpeedup'
 data = pd.read_excel(dir + fileName + '.xlsx')
 print data

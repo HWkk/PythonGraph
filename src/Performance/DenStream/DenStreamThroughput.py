@@ -6,7 +6,7 @@ font = {'family': 'Times New Roman',
         'size': 10,
         }
 
-datasets = ['KDD99', 'CoverType', 'KDD98']
+datasets = ['large-KDD99', 'large-CoverType', 'large-KDD98']
 
 ##DenStream
 #throughput
@@ -19,7 +19,7 @@ width = 0.2
 plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
 
-fig, ax = plt.subplots(figsize=(3.5, 2.2))
+fig, ax = plt.subplots(figsize=(3.8, 2.2))
 plt.subplots_adjust(
     left=0.16,
     bottom=0.1,

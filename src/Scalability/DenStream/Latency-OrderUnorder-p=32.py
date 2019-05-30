@@ -6,7 +6,7 @@ font = {'family': 'Times New Roman',
         'size': 10,
         }
 
-datasets = ['KDD99', 'CoverType', 'KDD98']
+datasets = ['large-KDD99', 'large-CoverType', 'large-KDD98']
 
 ordered_DenStream = [4.975, 5.429, 32.154]
 unordered_Denstream = [10.515, 6.840, 35.587]
@@ -25,7 +25,7 @@ plt.subplots_adjust(
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, ordered_DenStream, width, color='lightpink', label="ordered-DenStream", edgecolor='black')
+rects1 = plt.bar(pos, ordered_DenStream, width, color='lightpink', label="DistStream-DenStream", hatch='///', edgecolor='black')
 rects2 = plt.bar([p + width for p in pos], unordered_Denstream, width, color='lightgreen', label="unordered-DenStream", hatch='xxx', edgecolor='black')
 
 plt.ylabel('Latency(us)', size=10, weight='medium')
