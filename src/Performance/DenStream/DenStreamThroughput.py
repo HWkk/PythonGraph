@@ -32,9 +32,9 @@ plt.subplots_adjust(
 
 rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA", edgecolor='black')
 
-rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='lightgreen', label="Unordered-CluStream", hatch='///', edgecolor='black')
+rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='lightgreen', label="Unordered-DenStream", hatch='///', edgecolor='black')
 
-rects2 = plt.bar([p + width * 2 for p in pos], ordered_DenStream, width, color='deepskyblue', label="DistStream-CluStream", hatch='\\\\\\', edgecolor='black')
+rects2 = plt.bar([p + width * 2 for p in pos], ordered_DenStream, width, color='deepskyblue', label="DistStream-DenStream", hatch='\\\\\\', edgecolor='black')
 
 
 plt.ylabel('Throughput (' + r'${\times 10^3}$' + ' records/s)', weight='roman')

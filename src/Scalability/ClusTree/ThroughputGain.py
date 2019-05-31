@@ -11,12 +11,12 @@ dir = '../../Data/Scalability/ClusTree/'
 fileName = 'ClusTree-ThroughputGain'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
-fig, ax = plt.subplots(figsize=(3.6, 2.3))
+fig, ax = plt.subplots(figsize=(3.6, 2.4))
 
-
+plt.ylim(0, 11)
 plt.subplots_adjust(
-    left=0.16,
-    bottom=0.18,
+    left=0.14,
+    bottom=0.19,
     right=0.97,
     top=0.99,
     wspace=0.00,
@@ -32,11 +32,11 @@ plt.ylabel('Throughput gain')#, size=8, weight='medium')
 marksize = 4
 linewidth = 1.2
 
-plt.plot(data[data.columns[0]], data[data.columns[1]], marker='D', markersize=marksize, linewidth=linewidth, color='b')
+plt.plot(data[data.columns[0]], data[data.columns[1]], marker='s', markersize=marksize, linewidth=linewidth, color='b')
 plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth, color='g')
-plt.plot(data[data.columns[0]], data[data.columns[3]], marker='s', markersize=marksize, linewidth=linewidth, color='r')
+plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='r')
 
 plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc='best', frameon=False)
-plt.show()
-# plt.savefig(dir + fileName + ".pdf")
+#plt.show()
+plt.savefig(dir + fileName + ".pdf")
 

@@ -32,9 +32,9 @@ plt.subplots_adjust(
 
 rects1 = plt.bar(pos, moa, width, color='pink',  label="MOA", edgecolor='black')
 
-rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='lightgreen', label="Unordered-CluStream", hatch='///', edgecolor='black')
+rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='lightgreen', label="Unordered-DenStream", hatch='///', edgecolor='black')
 
-rects2 = plt.bar([p + width * 2 for p in pos], ordered_DenStream, width, color='lightblue', label="DistStream-CluStream", hatch='\\\\\\',  edgecolor='black')
+rects2 = plt.bar([p + width * 2 for p in pos], ordered_DenStream, width, color='lightblue', label="DistStream-DenStream", hatch='\\\\\\',  edgecolor='black')
 
 plt.ylabel('Latency per record (ms)')
 ax.set_xticks([p + 1.0 * width for p in pos])
