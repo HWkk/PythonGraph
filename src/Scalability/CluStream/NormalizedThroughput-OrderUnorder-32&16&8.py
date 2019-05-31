@@ -20,12 +20,12 @@ plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
 
 plt.rc('pdf', fonttype=42)
-fig, ax = plt.subplots(figsize=(3.6, 2.2))
+fig, ax = plt.subplots(figsize=(3.8, 2.2))
 
 plt.subplots_adjust(
-    left=0.15,
+    left=0.14,
     bottom=0.1,
-    right=0.97,
+    right=0.98,
     top=0.95,
     wspace=0.00,
     hspace=0.00)
@@ -46,7 +46,7 @@ plt.xticks(fontsize=10)
 
 plt.ylim(0, 2.2)
 # plt.legend(loc='upper left', frameon=False, labelspacing=0.3, borderaxespad=0.2, columnspacing=2.2, handletextpad=0.5)
-plt.legend(ncol=3, loc="upper left",
+plt.legend(ncol=3, loc="upper center",
            frameon=False, #bbox_to_anchor=(0.55, 0),
            labelspacing=0.05, markerfirst=True,
            borderaxespad=0.1, handletextpad=0.3)
