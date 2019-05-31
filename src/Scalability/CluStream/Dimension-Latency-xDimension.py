@@ -13,11 +13,11 @@ dir = '../../Data/Scalability/CluStream/'
 fileName = 'Clustream-Dimension-KDD98-Latency-xDimension'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
-fig, ax = plt.subplots(figsize=(3.6, 2.4))
+fig, ax = plt.subplots(figsize=(3.7, 2.7))
 
 plt.subplots_adjust(
-    left=0.16,
-    bottom=0.19,
+    left=0.17,
+    bottom=0.18,
     right=0.97,
     top=0.95,
     wspace=0.00,
@@ -29,7 +29,7 @@ plt.subplots_adjust(
 
 
 plt.xlabel('Feature number')
-plt.ylabel('Latency per micro-cluster ($\mu s$)')#, size=10, weight='medium')
+plt.ylabel('Latency per dimension ($\mu s$)')#, size=10, weight='medium')
 plt.ylim(0, 1.3)
 
 marksize = 3

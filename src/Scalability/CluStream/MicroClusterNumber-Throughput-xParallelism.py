@@ -10,6 +10,8 @@ plt.rc('pdf', fonttype=42)
 dir = '../../Data/Scalability/CluStream/'
 fileName = 'Clustream-MicroCluster-KDD98-Throughput-xParallelism'
 data = pd.read_excel(dir + fileName + '.xlsx')
+plt.rcParams['xtick.direction'] = 'in'
+plt.rcParams['ytick.direction'] = 'in'
 # plt.figure(figsize=(3.8, 2.3))
 # plt.subplots_adjust(
 #     left=0.16,
@@ -19,25 +21,22 @@ data = pd.read_excel(dir + fileName + '.xlsx')
 #     wspace=0.00,
 #     hspace=0.00)
 
-fig, ax = plt.subplots(figsize=(3.6, 2.4))
+fig, ax = plt.subplots(figsize=(3.6, 2.7))
 
 plt.subplots_adjust(
-    left=0.12,
+    left=0.14,
     bottom=0.19,
     right=0.97,
     top=0.99,
     wspace=0.00,
     hspace=0.00)
 
-plt.rcParams['xtick.direction'] = 'in'
-plt.rcParams['ytick.direction'] = 'in'
-
 
 plt.xlabel('Parallelism degree')#, size=8, weight='medium')
 
 plt.ylabel('Throughput (' + r'$\times{10^3}$' + ' records/s)')
 # plt.xlim(15, 160)
-# plt.ylim(0, 55000)
+plt.ylim(0, 58)
 
 marksize = 3
 linewidth = 1.2

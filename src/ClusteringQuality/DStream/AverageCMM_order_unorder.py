@@ -23,7 +23,7 @@ plt.rcParams['ytick.direction'] = 'in'
 fig, ax = plt.subplots(figsize=(4.0, 2.3))
 
 plt.subplots_adjust(
-    left=0.12,
+    left=0.13,
     bottom=0.09,
     right=0.97,
     top=0.97,
@@ -54,5 +54,5 @@ def autolabel(rects, loc, angle):
 autolabel(rects1, 0, 45)
 autolabel(rects2, 0, 45)
 autolabel(rects3, 0, 45)
-#plt.show()
+# plt.show()
 plt.savefig(dir + "DStreamAverageCMM-order-unorder.pdf")

@@ -11,18 +11,17 @@ dir = '../../Data/Scalability/DStream/'
 fileName = 'DStream-ThroughputGain'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
+plt.rcParams['xtick.direction'] = 'in'
+plt.rcParams['ytick.direction'] = 'in'
 fig, ax = plt.subplots(figsize=(3.6, 2.4))
 
 plt.subplots_adjust(
-    left=0.12,
+    left=0.11,
     bottom=0.19,
     right=0.97,
     top=0.99,
     wspace=0.00,
     hspace=0.00)
-
-plt.rcParams['xtick.direction'] = 'in'
-plt.rcParams['ytick.direction'] = 'in'
 
 plt.ylim(0, 9)
 plt.xlabel('Parallelism degree')#, size=8, weight='medium')
@@ -37,6 +36,6 @@ plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=ma
 plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='r')
 
 plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc='best', frameon=False)
-#plt.show()
-plt.savefig(dir + fileName + ".pdf")
+plt.show()
+# plt.savefig(dir + fileName + ".pdf")
 

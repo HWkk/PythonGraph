@@ -11,6 +11,9 @@ dir = '../../Data/Scalability/CluStream/'
 fileName = 'Clustream-MicroCluster-KDD98-LatencyPerMc-xClusterSize'
 data = pd.read_excel(dir + fileName + '.xlsx')
 
+
+plt.rcParams['xtick.direction'] = 'in'
+plt.rcParams['ytick.direction'] = 'in'
 # plt.figure(figsize=(3.8, 2.3))
 # plt.subplots_adjust(
 #     left=0.11,
@@ -19,18 +22,15 @@ data = pd.read_excel(dir + fileName + '.xlsx')
 #     top=0.94,
 #     wspace=0.00,
 #     hspace=0.00)
-fig, ax = plt.subplots(figsize=(3.6, 2.4))
+fig, ax = plt.subplots(figsize=(3.67, 2.7))
 
 plt.subplots_adjust(
-    left=0.15,
-    bottom=0.19,
+    left=0.14,
+    bottom=0.18,
     right=0.97,
     top=0.95,
     wspace=0.00,
     hspace=0.00)
-
-plt.rcParams['xtick.direction'] = 'in'
-plt.rcParams['ytick.direction'] = 'in'
 
 
 
