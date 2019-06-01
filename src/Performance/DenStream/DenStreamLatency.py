@@ -36,7 +36,7 @@ rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='li
 
 rects2 = plt.bar([p + width * 2 for p in pos], ordered_DenStream, width, color='lightblue', label="DistStream-DenStream", hatch='\\\\\\',  edgecolor='black')
 
-plt.ylabel('Latency per record (ms)')
+plt.ylabel('Latency per record ($\mu s$)')
 ax.set_xticks([p + 1.0 * width for p in pos])
 ax.set_xticklabels(datasets)
 
