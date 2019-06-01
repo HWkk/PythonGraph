@@ -25,9 +25,9 @@ fig, ax = plt.subplots(figsize=(3.6, 2.7))
 
 plt.subplots_adjust(
     left=0.14,
-    bottom=0.19,
+    bottom=0.15,
     right=0.97,
-    top=0.99,
+    top=0.94,
     wspace=0.00,
     hspace=0.00)
 

@@ -11,9 +11,9 @@ datasets = ['large-KDD99', 'large-CoverType', 'large-KDD98']
 
 #DenStream
 #latency
-moa = [0.0401, 0.0449, 0.1176]
-ordered_DenStream = [0.0454, 0.0510, 0.1402]
-unordered_DenStream = [0.0563, 0.0658, 0.1561]
+moa = [40.1, 44.9, 117.6]
+ordered_DenStream = [45.4, 51.0, 140.2]
+unordered_DenStream = [56.3, 65.8, 156.1]
 
 pos = list(range(len(moa)))
 width = 0.23
@@ -41,18 +41,18 @@ ax.set_xticks([p + 1.0 * width for p in pos])
 ax.set_xticklabels(datasets)
 
 plt.xticks(fontsize=10)
-plt.ylim(0, 0.4)
+plt.ylim(0, 400)
 plt.legend(loc='upper left', frameon=False, labelspacing=0.3, borderaxespad=0.2, columnspacing=2.2, handletextpad=0.5)
 
 def autolabel(rects, loc, angle):
     for rect in rects:
         h = rect.get_height()
-        ax.text(rect.get_x()+rect.get_width()/2.+loc, 1.01*h, '%0.2f'%float(h),
+        ax.text(rect.get_x()+rect.get_width()/2.+loc, 1.01*h, '%d'%int(h),
                 ha='center', va='bottom', rotation=angle)
 
 autolabel(rects1, 0, 45)
 autolabel(rects2, 0, 45)
 autolabel(rects3, 0, 45)
 
-#plt.show()
+# plt.show()
 plt.savefig(dir + "Latency-DenStream.pdf")
