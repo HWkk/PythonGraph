@@ -47,10 +47,10 @@ plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=ma
 plt.legend(labels=[data.columns[1], data.columns[3], data.columns[2]], ncol=2, loc=8,
            frameon=False, #bbox_to_anchor=(0.55, 0),
            labelspacing=0.05, markerfirst=True,
-           borderaxespad=0.1, columnspacing=-3.5, handletextpad=0.3)
+           borderaxespad=0.1, columnspacing=-1.4, handletextpad=0.3)
 
 
 
-#plt.show()
+# plt.show()
 plt.savefig(dir + fileName + ".pdf")
 

@@ -35,7 +35,7 @@ plt.subplots_adjust(
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA", edgecolor='black')
+rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA-ClusTree", edgecolor='black')
 
 rects3 = plt.bar([p + width for p in pos], unordered_ClusTree, width, hatch='///', color='lightgreen', label="Unordered-ClusTree", edgecolor='black')
 
@@ -56,8 +56,8 @@ def autolabel(rects, loc, angle):
         ax.text(rect.get_x()+rect.get_width()/2.+loc, 1.01*h, '%0.2f'%float(h),
                 ha='center', va='bottom', rotation=angle)
 
-autolabel(rects1, 0, 30)
-autolabel(rects2, 0, 30)
-autolabel(rects3, 0, 30)
-# plt.show()
-plt.savefig(dir + "ClusTreeAverageCMM-order-unorder.pdf")
+autolabel(rects1, 0, 45)
+autolabel(rects2, 0, 45)
+autolabel(rects3, 0, 45)
+plt.show()
+# plt.savefig(dir + "ClusTreeAverageCMM-order-unorder.pdf")

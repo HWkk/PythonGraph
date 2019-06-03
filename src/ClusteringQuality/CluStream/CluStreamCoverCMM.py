@@ -47,6 +47,6 @@ plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=ma
 #plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc=8, prop=font, frameon=False, bbox_to_anchor=(0.65, 0))
 plt.legend(labels=[data.columns[1], data.columns[3], data.columns[2]], loc=8, frameon=False, bbox_to_anchor=(0.65, 0), markerfirst=True)
 
-#plt.show()
-plt.savefig(dir + fileName + ".pdf")
+plt.show()
+# plt.savefig(dir + fileName + ".pdf")
 

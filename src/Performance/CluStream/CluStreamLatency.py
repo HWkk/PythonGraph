@@ -30,7 +30,7 @@ plt.subplots_adjust(
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, moa, width, label="MOA", color='pink', edgecolor='black')
+rects1 = plt.bar(pos, moa, width, label="MOA-CluStream", color='pink', edgecolor='black')
 
 rects3 = plt.bar([p + width for p in pos], unordered_CluStream, width, color='lightgreen', label="Unordered-CluStream", hatch='///', edgecolor='black')
 

@@ -30,7 +30,7 @@ plt.subplots_adjust(
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, moa, width, color='pink',  label="MOA", edgecolor='black')
+rects1 = plt.bar(pos, moa, width, color='pink',  label="MOA-DenStream", edgecolor='black')
 
 rects3 = plt.bar([p + width for p in pos], unordered_DenStream, width, color='lightgreen', label="Unordered-DenStream", hatch='///', edgecolor='black')
 
@@ -54,5 +54,5 @@ autolabel(rects1, 0, 45)
 autolabel(rects2, 0, 45)
 autolabel(rects3, 0, 45)
 
-# plt.show()
-plt.savefig(dir + "Latency-DenStream.pdf")
+plt.show()
+# plt.savefig(dir + "Latency-DenStream.pdf")

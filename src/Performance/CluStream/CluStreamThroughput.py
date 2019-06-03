@@ -33,7 +33,7 @@ plt.subplots_adjust(
 
 
 
-rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA", edgecolor='black')
+rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA-CluStream", edgecolor='black')
 
 rects3 = plt.bar([p + width for p in pos], unordered_CluStream, width,  color='lightgreen', label="Unordered-CluStream", hatch='///', edgecolor='black')
 
@@ -54,8 +54,8 @@ def autolabel(rects, loc, angle):
         ax.text(rect.get_x()+rect.get_width()/2.+loc, 1.01*h, '%0.1f'%float(h),
                 ha='center', va='bottom', fontsize=11, rotation=angle)
 
-autolabel(rects1, 0.01, 40)
-autolabel(rects2, 0.01, 40)
-autolabel(rects3, 0.01, 40)
-#plt.show()
+autolabel(rects1, 0.01, 45)
+autolabel(rects2, 0.01, 45)
+autolabel(rects3, 0.01, 45)
+# plt.show()
 plt.savefig(dir + "ThroughPut-CluStream.pdf")

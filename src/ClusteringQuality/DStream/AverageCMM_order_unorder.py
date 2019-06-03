@@ -30,9 +30,9 @@ plt.subplots_adjust(
     wspace=0.00,
     hspace=0.00)
 
-rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA", edgecolor='black')
+rects1 = plt.bar(pos, moa, width, color='lightpink', label="MOA-DStream", edgecolor='black')
 
-rects3 = plt.bar([p + width for p in pos], unordered_DStream, width, color='lightgreen', label="unordered-DStream", hatch='///', edgecolor='black')
+rects3 = plt.bar([p + width for p in pos], unordered_DStream, width, color='lightgreen', label="Unordered-DStream", hatch='///', edgecolor='black')
 
 rects2 = plt.bar([p + width * 2 for p in pos], ordered_DStream, width, color='deepskyblue', label="DistStream-DStream", hatch='\\\\\\',  edgecolor='black')
 
