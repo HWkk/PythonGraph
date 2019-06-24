@@ -32,8 +32,10 @@ font = {'family': 'Helvetica',
 
 # plt.xticks(fontsize=8, weight='medium')
 # plt.yticks(fontsize=8, weight='medium')
+
 plt.xlabel('The number of arriving records (' + r'$\times{10^3}$' + ')')#, size=8, weight='medium')
 plt.ylabel('Normalized CMM')#, size=8, weight='medium')
+
 plt.ylim(0.3, 1.05)
 plt.xlim(0, 600)
 
@@ -43,6 +45,7 @@ linewidth = 1
 plt.plot(data[data.columns[0]], data[data.columns[1]], linestyle=":", linewidth=linewidth, color='black')#color='#978a84')
 plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='r')
 plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=marksize, linewidth=linewidth)
+
 
 #plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc=8, prop=font, frameon=False, bbox_to_anchor=(0.65, 0))
 plt.legend(labels=[data.columns[1], data.columns[3], data.columns[2]], loc=8, frameon=False, bbox_to_anchor=(0.65, 0), markerfirst=True)
