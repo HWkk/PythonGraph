@@ -50,7 +50,7 @@ plt.subplots_adjust(
 #plt.xticks(fontsize=8, weight='medium')
 #plt.yticks(fontsize=8, weight='medium')
 plt.xlabel(u'并行度')#, size=8, weight='medium')
-plt.ylabel(u'吞吐量增长率')#, size=8, weight='medium')
+plt.ylabel(u'吞吐率增长率')#, size=8, weight='medium')
 plt.ylim(0, 14)
 marksize = 4
 linewidth = 1.2
@@ -60,6 +60,6 @@ plt.plot(data[data.columns[0]], data[data.columns[2]], marker='^', markersize=ma
 plt.plot(data[data.columns[0]], data[data.columns[3]], marker='D', markersize=marksize, linewidth=linewidth, color='dimgray')
 
 plt.legend(labels=[data.columns[1], data.columns[2], data.columns[3]], loc='best', frameon=False)
-plt.show()
-# plt.savefig(dir + fileName + "-patent.pdf")
+# plt.show()
+plt.savefig(dir + fileName + "-patent.png")
 

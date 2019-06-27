@@ -42,7 +42,7 @@ rects3 = plt.bar([p + width for p in pos], unordered_CluStream, width,  color='g
 rects2 = plt.bar([p + width * 2 for p in pos], ordered_CluStream, width,  color='white',label=u"有序CluStream", hatch='\\\\\\', edgecolor='black')
 
 
-plt.ylabel(u'吞吐量 (' + r'${\times 10^3}$' + u' 条数据/秒)', weight='medium')
+plt.ylabel(u'吞吐率 (' + r'${\times 10^3}$' + u' 条数据/秒)', weight='medium')
 ax.set_xticks([p + 1.0 * width for p in pos])
 ax.set_xticklabels(datasets)
 plt.xticks(fontsize=10)
@@ -60,4 +60,4 @@ autolabel(rects1, 0.01, 45)
 autolabel(rects2, 0.01, 45)
 autolabel(rects3, 0.01, 45)
 # plt.show()
-plt.savefig(dir + "ThroughPut-CluStream-patent.pdf")
+plt.savefig(dir + "ThroughPut-CluStream-patent.png")
